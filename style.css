@@ -1,0 +1,2083 @@
+/*!
+Theme Name: Planet Gaming
+Theme URI: http://underscores.me/
+Author: SeoSeaMarketing.NL
+Author URI: http://www.seoseamarketing.nl/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: planet-gaming
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+
+
+Planet Gaming is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+
+.navbar li.current_page_item a,
+.navbar-nav li.current_page_parent a {
+  color: #033a97;
+  font-weight: 700;
+}
+
+/* Small menu. */
+
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: block;
+  }
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+
+#content[tabindex='-1']:focus {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: '';
+  display: table;
+  table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+
+.sticky {
+  display: block;
+}
+
+.post,
+.page {
+  margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+
+.custom-logo-link {
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption img[class*='wp-image-'] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+.gallery-caption {
+  display: block;
+}
+
+/* ######################## CUSTOM CSS HERE ################### */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: #1d4ea2 !important;
+  margin-top: 50px;
+}
+
+h1 {
+  font-weight: 900 !important;
+}
+
+p {
+  color: #1d4ea2;
+}
+
+.navbar ul li {
+  display: inline-block;
+  /* width: 100%; */
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+.logged-in .navbar {
+  top: 34px;
+}
+
+.navbar {
+  position: fixed !important;
+  overflow: auto;
+  z-index: 1;
+  background: #ffffff;
+  min-width: 100%;
+  padding: 0;
+}
+
+ul {
+  margin-bottom: 0px !important;
+  margin-left: 80px;
+}
+
+ul li a {
+  width: 110px;
+  height: 143px;
+  left: 722px;
+  top: calc(50% - 143px / 2 - 1341.5px);
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 14px;
+  color: rgba(29, 78, 162, 0.55);
+}
+
+a:active {
+  color: #1d4ea2 !important;
+}
+
+ul li a:hover {
+  color: #ffb800 !important;
+}
+
+/* ====== CHANGE BURGER ICON COLOR HERE ====== */
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  margin: 2rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: rgb(124, 156, 212) !important;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  position: relative;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(29, 78, 162)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+img.logo {
+  width: 24vw;
+  margin-left: 2em;
+}
+
+ul li {
+  font-size: 14px;
+  padding: 25px 0px 25px 30px;
+  margin: 0px 25px 0px 0px;
+}
+
+a .active {
+  color: #ffb800 !important;
+}
+
+.phone {
+  margin-left: 50px;
+  padding-bottom: 30px;
+  line-height: 0.5px;
+}
+
+.dagEnNacht {
+  padding-right: 0px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+.phone-pic {
+  padding-right: 0px;
+  padding-top: 30px;
+  right: 100px;
+}
+
+.phone-number {
+  padding-left: 70px;
+  padding-top: 80px;
+  font-weight: 800;
+}
+
+/* CONETNT HERE */
+
+h1 {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+p {
+  color: #1d4ea2;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.content {
+  margin-top: 158px;
+}
+
+#bg-image {
+  background-image: url('assets/img/gambling-home-1.jpg');
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 451px;
+  box-sizing: border-box;
+}
+
+.content-text {
+  position: absolute;
+  width: 484px;
+  height: 451px;
+  background-color: rgba(24, 24, 24, 0.88);
+}
+
+.content-text p {
+  width: 319px;
+  height: 150px;
+  margin: 0 auto;
+  padding-top: 120px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.content-text-bold {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.btn-light {
+  position: relative;
+  width: 197px;
+  height: 44px;
+  margin: 150px auto;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold !important;
+  line-height: normal;
+  font-size: 16px;
+  color: #323232;
+  background: #ffffff;
+  border-radius: 0px !important;
+  border: 1px solid #ffffff;
+  padding-top: 10px !important;
+  box-shadow: 10px 10px #ffb800;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+/* ONZE PRODUCTEN  */
+
+.onze-producten {
+  text-align: center;
+  margin-top: 140px;
+  width: 599px;
+  height: 50px;
+}
+
+/* ======== PRODUCT ITEMS AND CAROUSEL ========  */
+
+.product {
+  background: #fff;
+  text-align: center;
+  position: relative;
+  margin-top: 6em;
+  height: 100%;
+}
+
+.product .description {
+  font-size: 16px;
+  color: #1d4ea2;
+  text-align: justify;
+  margin-top: 0px;
+  letter-spacing: -1px;
+}
+
+.product p {
+  color: #1d4ea2;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.product .title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #1d4ea2;
+  text-transform: capitalize;
+  margin: 0 0 5px 0;
+}
+
+.btn {
+  border-radius: 0px !important;
+  font-weight: 800 !important;
+  font-size: 16px !important;
+  letter-spacing: 1px;
+}
+
+.btn-warning {
+  background-color: #ffb800 !important;
+  color: #ffffff !important;
+  width: 167px;
+  height: 44px;
+  left: 635px;
+  top: 1386px;
+  padding: 10px !important;
+}
+
+.product .btn:hover {
+  background: rgb(212, 156, 14) !important;
+}
+
+#container {
+  position: relative;
+}
+
+/*CARDS HERE*/
+
+.cards-slider {
+  margin: 4em auto;
+  max-width: 100%;
+  min-height: 45em;
+}
+
+.card-slider {
+  background-color: #fff;
+  height: 0em;
+  margin-top: 10em;
+  border: 1px;
+}
+
+.card img {
+  overflow: hidden;
+  max-width: 100%;
+  height: 55vh;
+  zoom: 1.2;
+  margin: 0 0 0 2em;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-slider .body {
+  padding: 1em;
+  font-size: 0.9rem;
+  color: #757575;
+  position: relative;
+}
+
+.card-slider .button-slider {
+  margin-bottom: 2em;
+  position: absolute;
+  top: 9em;
+  width: 100%;
+}
+
+/* CAROUSAL HERE  */
+
+.owl-theme .owl-controls {
+  margin-top: 60px;
+}
+
+.owl-theme .owl-controls .owl-page:first-child {
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  left: -6rem;
+  background-image: url('assets/img/left-arrow.png');
+  border: 2px solid #ffffff;
+  margin: 5px;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-theme .owl-controls .owl-page:nth-child(2) {
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  right: -6rem;
+  background-image: url('assets/img/right-arrow.png');
+  border: 2px solid #ffffff;
+  margin: 5px;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: transparent;
+  border-color: none;
+}
+
+.owl-carousel .owl-item {
+  display: flex;
+  margin-bottom: 5em;
+}
+
+/* =======THE END OF CAROUSEL HERE ======= */
+
+/* ======== PLANET SECTION =========== */
+
+/* #planet-section {
+  margin-bottom: 170px;
+} */
+
+/* #planet-gaming-2 {
+  background-image: url('assets/img/gambling-home-2.jpg');
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 396px;
+  box-sizing: border-box;
+} */
+
+.over-lay {
+  background: rgba(24, 24, 24, 0.7);
+  width: 100%;
+  height: 396px;
+}
+
+.planet-gaming-2-content p {
+  margin: 0 auto;
+  padding-top: 130px;
+  width: 1080px;
+  height: 150px;
+  left: 180px;
+  line-height: 1.5;
+  top: 1721px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.btn-light-2 {
+  position: relative;
+  width: 197px;
+  height: 44px;
+  margin: 80px auto;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 16px;
+  color: #323232;
+  background: #ffffff !important;
+  border-radius: 0px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  box-shadow: 10px 10px #ffb800;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+.planet-gaming-2-content .btn:hover {
+  background: #eee7e7 !important;
+}
+
+/* ========== CONTACT SECTION ========= */
+
+/* ==== FIRST COLUNM OF CONTACT SECTION ==== */
+
+#contact-section {
+  height: 560px;
+  margin-top: 100px;
+  margin-bottom: 140px;
+}
+
+.form-group {
+  margin: 0px 20px 50px 20px;
+  padding-top: 16px;
+  border-bottom: 1.8px solid #1d4ea2;
+  margin: 0 auto;
+  color: #1d4ea2;
+  width: 70%;
+  height: 80px;
+  font-weight: 700;
+}
+
+.wpcf7-form-control-wrap {
+  background-color: #e1f0fa !important;
+}
+
+.contact-wrapper {
+  margin: 20 auto;
+  width: 493px;
+  height: 600px !important;
+  background-color: #e1f0fa;
+  box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.contact-wrapper .form-control {
+  background-color: #e1f0fa !important;
+}
+
+textarea.form-control {
+  height: 0;
+}
+
+.contact-wrapper h3 {
+  font-weight: 800;
+  padding-top: 40px;
+}
+
+.naam,
+.emailadres,
+.onderwerp,
+.bricht {
+  margin: 0 auto;
+}
+
+input[type='name'],
+input[type='email'],
+input[type='onderwerp'],
+input[type='text'] {
+  background-color: #e1f0fa;
+  color: rgba(29, 78, 162, 0.62);
+  border: 1px solid transparent;
+  padding-left: 0px;
+  padding-bottom: 5px;
+}
+
+input[type='text']:focus {
+  border: 0px solid transparent;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #1d4ea2 !important;
+  opacity: 0.5 !important;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #1d4ea2 !important;
+  opacity: 0.5 !important;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #1d4ea2 !important;
+  opacity: 0.5 !important;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #1d4ea2 !important;
+  opacity: 0.5 !important;
+}
+
+/* ====== BTN CONTACT IS HERE ==== */
+
+.btn-contact {
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 16px;
+  color: #ffffff !important;
+  background: #ffb800 !important;
+  border-radius: 0px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  box-shadow: 10px 10px rgba(122, 151, 195, 0.45);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  width: 40%;
+  height: 44px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-wrapper .btn:hover {
+  background: rgb(212, 156, 14) !important;
+}
+
+/* ===== SECOND COLUNM OF CONTACT SECTION ==== */
+
+.contact-wrapper-2 {
+  margin-top: 60px;
+}
+
+.contact-wrapper-2 h3 {
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.contact-wrapper-2 p {
+  width: 563px;
+  height: 35vh !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.8;
+  font-size: 16px;
+  color: rgba(29, 78, 162, 0.62);
+  margin-bottom: 50px;
+}
+
+.contact-wrapper-2 div a {
+  flex-direction: column;
+  text-decoration: none;
+  background-color: rgb(128, 186, 228) !important;
+  color: #1d4ea2;
+  border-radius: 0;
+  border: hidden !important;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 16px;
+  height: 46px;
+  margin-top: 6vh !important;
+  padding: 10px 20px;
+  box-shadow: 10px 10px rgba(255, 233, 175, 0.55);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  margin-bottom: 0px;
+  transition: all 1s ease-in-out;
+}
+
+.contact-wrapper-2 div a:hover {
+  background-color: #51a7e9 !important;
+  border: 0px solid transparent !important;
+}
+
+/* ====== FOOTER HERE ======= */
+
+/* ========= FIRST COLUNM HERE ===== */
+
+#footer {
+  width: 100%;
+  height: 290px;
+  background: #1d4ea2;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px;
+}
+
+#footer a {
+  color: #c2ccd7;
+}
+
+#adress li {
+  display: block;
+  color: #fff;
+  list-style: none;
+  right: 3em;
+  position: relative;
+  padding: 0.1em 0;
+  line-height: 2.2;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1em;
+}
+
+#adress li:first-child {
+  margin-left: -1em;
+}
+
+#adress li:nth-child(2) {
+  /* margin-bottom: 0.5em; */
+}
+
+#adress li:nth-child(3) {
+  margin-right: 0.8em;
+}
+
+#adress li:nth-child(4)::before {
+  content: url('assets/img/phone-pic.png');
+  position: absolute;
+  margin-left: -3em;
+  bottom: 0;
+  zoom: 1;
+}
+
+#adress li:nth-child(4) {
+  color: #fff !important;
+  font-weight: 800 !important;
+  margin-left: -4em;
+}
+
+#footer-category li {
+  display: block;
+  color: #fff;
+  list-style: none;
+  right: 1em;
+  position: relative;
+  padding: 0.1em 0;
+  letter-spacing: 0.3;
+  line-height: 0.6;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2em;
+  font-weight: 800;
+}
+
+#footer-category li:nth-child(3) {
+  right: 1.6em;
+}
+
+#footer-category li:nth-child(4) {
+  right: 0.4em;
+}
+
+#footer-category li:nth-child(5) {
+  right: 0em;
+}
+
+#footer-category li:nth-child(6) {
+  right: 1.4em;
+}
+
+/* =====SECOND COLUNM FOOTER ===== */
+
+.product-footer {
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-right: 84px;
+}
+
+/* ==== THIRDT COLUNM ==== */
+
+.social-icon {
+  position: relative;
+}
+
+ul #socail-media {
+  margin-right: 5em !important;
+}
+
+#socail-media li {
+  display: inline-block;
+  list-style: none;
+  left: 25em;
+  padding: 0em;
+  margin-right: 1em;
+  float: left;
+}
+
+.social-media {
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 18px;
+  margin-right: 7em;
+}
+
+/* ====== END OF THE FOOTER HERE ======= */
+
+/* ################ END OF HOME PAGE ################ */
+
+/* ######################## ONZE PRODUCTEN PAGE ######################### */
+
+#category {
+  width: 845px;
+  height: 260px;
+  text-align: center;
+  margin-top: -120px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#category h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cat {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+/* ======== LIST ITEMS ====== */
+
+/* CARD END HERE  */
+
+.cards {
+  box-sizing: border-box;
+  margin-top: 8em;
+  margin-bottom: 1em;
+  padding: 5em 0em 0em;
+  max-width: 100%;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cards .col-lg-4 {
+  /* height: 45em; */
+  height: 30em;
+  margin-bottom: 10em;
+  margin-top: 4em;
+}
+
+.card {
+  background-color: #fff;
+  height: 30em;
+  margin-top: 0em;
+  border: 1px;
+  position: relative;
+}
+
+.card .body {
+  padding: 1em;
+  font-size: 0.9rem;
+  position: relative;
+  display: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  overflow: hidden;
+  max-width: 100%;
+  height: 55vh;
+  zoom: 1;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* top: 50%;
+  left: 50%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+  position: absolute;
+  top: 10em;
+  width: 100%;
+}
+
+.card .title {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.product-list .button {
+  position: absolute;
+  top: 32em;
+}
+
+.product-lists .btn {
+  top: 60px;
+}
+
+.product-lists .btn:hover {
+  background: rgb(212, 156, 14) !important;
+}
+
+.center-pagination {
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 6em;
+}
+
+.pagination {
+  display: inline-block !important;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+}
+
+.pagination .page-numbers .current {
+  list-style: none;
+}
+
+.pagination a {
+  vertical-align: middle;
+  color: rgba(29, 78, 162, 0.55);
+  background-color: #ffffff;
+  padding: 8px 16px;
+}
+
+.pagination a.active {
+  color: #0f4fbd;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #f7f8f8;
+}
+
+/* ====== ONZE PRODUCTEN PLANET GAMING 3 ======= */
+
+#planet-gaming-3 {
+  background-image: url('assets/img/planet-game-3.jpg');
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 396px;
+  box-sizing: border-box;
+}
+
+/* ==== ONZE PRODUCTEN CONTACT ==== */
+
+#onze-producten-contact {
+  margin-top: 80px !important;
+  margin-bottom: 100px;
+}
+
+/* .contact-wrapper-2 p {
+  width: 563px;
+  height: 35vh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: ;
+  font-size: 16px;
+  padding-top: 10px;
+  color: rgba(29, 78, 162, 0.62);
+} */
+
+.contact-wrapper-2 div a:hover {
+  background-color: #579fd3 !important;
+  color: #1d4ea2;
+}
+
+/* ====== END OF ONZE PRODUCTEN PAGE HERE ====== */
+
+/* ############################## ONZE SERVICES ##################### */
+
+#services-width {
+  background-color: #ffffff;
+  width: 850px;
+  /* height: 660px; */
+  height: 100vh;
+  margin-top: -140px !important;
+  padding: 80px 120px 30px 120px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#services-width p {
+  line-height: 2;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.onze-producten-services {
+  margin-bottom: 60px;
+}
+
+.btn-services {
+  background-color: #ffb800 !important;
+  color: #ffffff !important;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 16px;
+  width: 167px;
+  height: 44px;
+  border-radius: 0;
+  box-shadow: 8px 10px 1px rgba(193, 216, 232, 0.45);
+}
+
+#services-width .btn-services:hover {
+  background: rgb(212, 156, 14) !important;
+}
+
+/* ====== SERVICE ITEMS SECTION HERE ======= */
+
+#service-item {
+  background-color: #e1f0fa;
+  height: 1050px;
+  margin-top: 100px;
+  margin-bottom: 170px;
+}
+
+/* ==== CAROUSEL ==== */
+
+.card-slider-bg-light-blue {
+  background-color: #e1f0fa;
+}
+
+.card-slider-bg-light-blue .body {
+  padding: 1em;
+  font-size: 0.9rem;
+  color: #757575;
+  position: relative;
+}
+
+.card-slider-bg-light-blue .button-slider {
+  margin-bottom: 2em;
+  position: absolute;
+  top: 12em;
+  width: 100%;
+}
+
+.product-item {
+  background-color: #e1f0fa;
+  text-align: center;
+  padding: 30px 30px 50px;
+  margin: 0 15px 100px;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  height: 100%;
+}
+
+.product-item .description {
+  font-size: 16px;
+  color: #1d4ea2;
+  text-align: justify;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+
+.product-item .title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #1d4ea2;
+  text-transform: capitalize;
+  margin: 0 0 5px 0;
+}
+
+.product-item .btn-warning:hover {
+  background: rgb(212, 156, 14) !important;
+}
+
+/* ======= SERVICES CONTACT ====== */
+
+#services-contact {
+  height: 560px;
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.onze-producten-services {
+  text-align: center;
+  margin-top: 100px;
+  width: 599px;
+  height: 50px;
+}
+
+/* ########################## OVER ONS/ ABOUT PAGE ##################### */
+
+#over-ons-bg-image {
+  background-image: url('assets/img/planet-gaming-4.jpg');
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 451px;
+  box-sizing: border-box;
+}
+
+#over-ons-width {
+  background-color: #ffffff;
+  width: 845px;
+  height: 880px;
+  margin-top: -140px;
+  padding: 100px 120px 0px 120px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#over-ons-width p {
+  line-height: 2.2;
+  font-weight: 500;
+}
+
+#over-ons-width .btn-services:hover {
+  background: rgb(212, 156, 14) !important;
+}
+
+/* ############################### CONTACT PAGE ########################## */
+
+.map-section {
+  margin-top: 157px;
+  height: 360px;
+  width: 100%;
+}
+
+/* ==== CONTACT DETAILS HERE ==== */
+
+#container-width {
+  background-color: #ffffff;
+  width: 850px;
+  height: 650px;
+  margin-top: -140px !important;
+  margin-bottom: 150px !important;
+  padding-top: 80px;
+  padding-right: 300px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.details-wrapper {
+  position: relative;
+  direction: rtl;
+}
+
+.contact-details {
+  background-color: #e1f0fa;
+  position: absolute;
+  text-align: center;
+  margin-right: 10px;
+  padding-top: 100px;
+  width: 330px;
+  height: 440px;
+  line-height: 2;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-details h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 40px;
+}
+
+.contact-details .bereikbaar {
+  margin: 40px 0 0 0;
+}
+
+.number {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 40px;
+}
+
+/* ====== CONTACT FORM ===== */
+
+/* ==== FIRST COLUNM OF CONTACT SECTION ==== */
+
+.form-group {
+  margin: 0px 20px 50px 20px;
+  padding-top: 16px;
+  border-bottom: 1.8px solid #1d4ea2;
+  margin: 0 auto;
+  color: #1d4ea2;
+  width: 90%;
+  height: 5em;
+  font-weight: 700;
+}
+
+textarea.form-control {
+  height: 3em;
+}
+
+.form-control {
+  padding: 0 0 0 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1.8px solid #1d4ea2;
+  border-radius: 0;
+}
+
+.contact-wrapper-in-contact-page {
+  width: 493px;
+  height: 500px;
+  background: #ffffff;
+  /* box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.15); */
+  border-radius: 8px;
+}
+
+.contact-wrapper-in-contact-page h3 {
+  font-weight: 800;
+  padding-top: 20px;
+}
+
+.contact-wrapper-in-contact-page .naam,
+.emailadres,
+.onderwerp,
+.bricht {
+  margin: 0 auto;
+}
+
+.contact-wrapper-in-contact-page input[type='name'],
+.contact-wrapper-in-contact-page input[type='email'],
+.contact-wrapper-in-contact-page input[type='onderwerp'],
+.contact-wrapper-in-contact-page input[type='text'] {
+  background-color: #ffffff;
+  color: rgba(29, 78, 162, 0.62);
+  border: 1px solid transparent;
+  padding-left: 0px;
+  padding-bottom: 5px;
+}
+
+input[type='text']:focus {
+  border: 0px solid transparent;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #1d4ea2 !important;
+  opacity: 0.5 !important;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #1d4ea2 !important;
+  opacity: 0.5 !important;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #1d4ea2 !important;
+  opacity: 0.5 !important;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #1d4ea2 !important;
+  opacity: 0.5 !important;
+}
+
+/* ====== BTN CONTACT IS HERE ==== */
+
+.btn-contact-page {
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 16px;
+  color: #ffffff !important;
+  background: #ffb800 !important;
+  border-radius: 0px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  box-shadow: 10px 10px rgba(122, 151, 195, 0.45);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  width: 40%;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.btn-contact-page:hover {
+  background: rgb(212, 156, 14) !important;
+}
+
+/* ======CONTACT BACKGROUND IMAGE ===== */
+
+#contact-bg-image {
+  background-image: url('assets/img/planet-game-3.jpg');
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 396px;
+  box-sizing: border-box;
+}
+
+.over-lay-contact {
+  background: rgba(24, 24, 24, 0.7);
+  width: 100%;
+  height: 450px;
+}
+
+/* ########################## PRODUCTEN PAGINA HERE ##################### */
+
+#product-pagina-bg-image {
+  background-image: url('assets/img/gambling-home-1.jpg');
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 451px;
+  box-sizing: border-box;
+}
+
+#product-pagina {
+  background-color: #ffffff;
+  width: 900px;
+  height: 645px;
+  margin-top: -140px;
+  padding: 50px 30px 0px 0px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-single-page {
+  left: 1em;
+}
+
+.card-single-page img {
+  overflow: hidden;
+  max-width: 100%;
+  height: 76vh;
+  margin: 0 auto;
+  zoom: 1;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -1.5em;
+}
+
+.btn-product-pagina {
+  background-color: #ffb800 !important;
+  color: #ffffff !important;
+  margin-top: 50px;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 16px;
+  width: 167px;
+  height: 44px;
+  float: left;
+  border-radius: 0;
+  box-shadow: 8px 10px 1px rgba(193, 216, 232, 0.45);
+}
+
+/* ======//// ########### MEDIA QUERY STARTS HERE ########## //// ====== */
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  /* ############ HOME PAGE ######### */
+  /* ====== CONTENT SECTION ===== */
+  .logged-in .navbar {
+    top: 34px;
+  }
+  .navbar {
+    max-width: 100vw;
+    display: flex;
+  }
+  .menu {
+    position: relative;
+    margin-top: 60px !important;
+    display: table-caption;
+  }
+  .menu a {
+    display: inline;
+  }
+  .menu li {
+    margin-left: 18px;
+  }
+  img .logo {
+    width: 50% !important;
+    padding: 0px 0px 5px 50px;
+    width: 100px !important;
+  }
+  .phone {
+    /* position: absolute;
+text-align: center;
+margin-bottom: 50px;
+top: 100px; */
+  }
+  .phone-number {
+    padding-left: 45px;
+  }
+  /* ======= CONTENT SECTION === */
+  #bg-image {
+    background-image: url('assets/img/gambling-home-1.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 70% 30%;
+    background-size: contain;
+    margin-top: 50px;
+    width: 100%;
+    height: 278px;
+    position: relative;
+  }
+  .content-text {
+    width: 100% !important;
+    height: 118px !important;
+    margin-top: 78px !important;
+    background-color: rgba(24, 24, 24, 0.5);
+    font-size: 6px;
+  }
+  .content-text p {
+    color: #ffffff;
+    height: 120px;
+    margin-top: -180px;
+    margin-bottom: 0px;
+    position: absolute;
+    top: 50%;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .btn {
+    font-size: 12px !important;
+  }
+  .btn-light {
+    width: 188px;
+    height: 44px;
+    margin: 100px auto;
+    padding: 10;
+  }
+  /* ======= ONZE PRODUCTEN ===== */
+  .onze-producten-container {
+    margin-bottom: 50px;
+  }
+  .onze-producten {
+    text-align: center;
+  }
+  /* SLIDER HERE  */
+  .owl-theme .owl-controls .owl-page:nth-child(2) {
+    display: none;
+  }
+  /* ======= PLANET GAMING 2 ===== */
+  #planet-gaming-2 {
+    background-image: url('assets/img/planet-game-3.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
+    background-size: contain;
+    width: 100%;
+    height: 280px;
+  }
+  .over-lay {
+    background: rgba(24, 24, 24, 0.7);
+    width: 100%;
+    height: 200px;
+    margin-top: -80px;
+  }
+  .planet-gaming-2-content p {
+    text-align: center;
+    width: 500px;
+    margin-top: -130px;
+    margin-bottom: 40px;
+  }
+  /* === CONTACT SECTION HERE === */
+  #contact-section {
+    margin-bottom: 700px !important;
+  }
+  /* == CONTACT WRAPPER 2 HERE == */
+  .contact-wrapper-2 {
+    text-align: center;
+    width: 90%;
+  }
+  .contact-wrapper-2 p {
+    text-align: center;
+    margin: 20px;
+    width: 90%;
+  }
+  /* ===== FOOTER SECTION HERE ===== */
+  #footer {
+    background: #1d4ea2;
+    height: 600px !important;
+    width: 100%;
+    margin-top: 400px !important;
+  }
+  #adress {
+    font-size: 0.7em;
+  }
+  #adress li:nth-child(4)::before {
+    content: url('assets/img/phone-pic.png');
+    position: absolute;
+    margin-left: -3.8em;
+    bottom: 0;
+    zoom: 0.8;
+  }
+  .product-footer {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 70px;
+  }
+  .products-footer {
+    color: rgba(255, 255, 255, 0.75);
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 16px;
+  }
+  #footer-category li:nth-child(2) {
+    right: 0.5em;
+  }
+  #footer-category li:nth-child(3) {
+    /* right: 1.2em; */
+    margin: 0;
+  }
+  #footer-category li:nth-child(4) {
+    /* right: 1.2em; */
+    margin: 0;
+  }
+  #footer-category li:nth-child(5) {
+    right: 1.2em;
+    margin: 0 0 0 0 !important;
+  }
+  #footer-category li:nth-child(6) {
+    right: 1em;
+  }
+  .social-media {
+    font-weight: 800;
+    font-size: 12px;
+  }
+  .social-icons {
+    margin-left: 120px;
+  }
+  .linkedin-icon {
+    margin-top: 10px;
+  }
+  /* ########### ONZE PRODUCTEN PAGINA ############## */
+  #category {
+    width: 80vw;
+    height: 55vh;
+    text-align: center;
+    margin-top: -100px;
+    padding-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  .product-list {
+    text-align: center;
+    padding: 0px 10px 0px;
+    margin: 0 15px 0px;
+    overflow: hidden;
+    margin-top: 100px;
+    height: 100%;
+  }
+  #planet-gaming-3 {
+    background-image: url(assets/img/planet-game-3.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
+    background-size: 100%;
+    width: 100%;
+    height: 396px;
+    box-sizing: border-box;
+  }
+  #planet-gaming-3 .over-lay {
+    background: rgba(24, 24, 24, 0.7);
+    background-size: 100px 0px;
+    background-position: 90% 10%;
+    width: 100%;
+    height: 180px;
+    margin: 0px;
+  }
+  .contact-wrapper-2 p {
+    margin-bottom: 90px !important;
+  }
+  /* ############# ONZE SERVICES PAGINA ################## */
+  #services-width {
+    width: 850px;
+    height: 1000px;
+    line-height: 1;
+    padding: 150px 80px 30px 80px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  .btn-services {
+    background-color: #ffb800;
+    color: #ffffff;
+    margin-left: 30%;
+    margin-right: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 16px;
+    width: 167px;
+    height: 44px;
+    border-radius: 0;
+    box-shadow: 8px 10px 1px rgba(193, 216, 232, 0.45);
+  }
+  #services-contact {
+    margin-bottom: 500px;
+  }
+  /* ######################## OVER ONS PAGINA ################ */
+  #over-ons-bg-image {
+    background-image: url('assets/img/planet-gaming-4.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
+    background-size: contain;
+    width: 100%;
+    height: 451px;
+    box-sizing: border-box;
+  }
+  #over-ons-width {
+    height: 1260px;
+    width: 100%;
+    margin-top: -300px;
+    padding: 100px 100px 0px 100px;
+  }
+  #over-ons-width {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  #over-ons-width p {
+    line-height: 2;
+    font-weight: 500;
+  }
+  /* ################ CONTACT PAGINA ############## */
+  #contact-bg-image {
+    background-image: url('assets/img/planet-game-3.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    width: 100%;
+    height: 166px;
+    margin-top: 100px;
+    box-sizing: border-box;
+  }
+  .over-lay-contact {
+    background: rgba(24, 24, 24, 0.7);
+    width: 100%;
+    height: 160px;
+    margin-top: 200px !important;
+  }
+  #container-width {
+    width: 100vw;
+    height: 1050px;
+  }
+  .contact-wrapper-in-contact-page {
+    margin-top: 450px;
+  }
+  #section-planet-gaming-2-content {
+    margin-top: 170px;
+  }
+  .details-wrapper {
+    position: relative;
+    /* direction: rtl; */
+    margin-left: 420px;
+  }
+  .contact-details {
+    background-color: #e1f0fa;
+    position: absolute;
+    text-align: center;
+    padding-top: 80px;
+    width: 330px;
+    height: 440px;
+    line-height: 2;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  .contact-details h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 40px;
+  }
+  /* ////////// END OF MEDIA MIN-WIDTH 600PX ////////// */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* iPads (portrait and landscape) ----------- */
+
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { */
+
+@media screen and (max-width: 1060px) {
+  /* Styles */
+  .navbar {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0;
+  }
+  img .logo {
+    padding: 0px 0px 5px 50px;
+  }
+  #navbarmain {
+    float: block !important;
+    width: 700px;
+  }
+  #contact-section {
+    height: 100px;
+    /* margin-left: 80px; */
+    margin-top: -100px;
+    margin-bottom: 550px;
+  }
+  #footer {
+    margin-top: 550px;
+    height: 500px;
+  }
+  /* END OF 40EM QUERY  */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (max-width: 1200px) {
+  .adress-footer {
+    padding-left: 6px;
+    margin-left: 40px;
+  }
+  .tele-footer {
+    padding-right: 10px !important;
+  }
+  .facebook-icon {
+    margin-top: -10px;
+  }
+  .call-footer {
+    margin-top: 6px;
+    padding-left: 0px;
+    position: absolute;
+    z-index: 10;
+    left: 40px;
+  }
+  #main-menu ul {
+    margin-left: 0px;
+  }
+  .navbar ul li {
+    padding: 20px 15px;
+    display: block;
+    padding-top: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .navbar {
+    margin-top: 0px;
+  }
+  .phone-number {
+    padding-left: 70px;
+    padding-top: 0;
+    font-weight: 800;
+    display: block;
+  }
+  .phone {
+    margin-left: 0px;
+  }
+  img.logo {
+    width: 220px;
+    margin-left: 15px;
+  }
+  .navbar-toggler {
+    margin: 15px;
+  }
+  .menu {
+    position: relative;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+  }
+}
